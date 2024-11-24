@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Матери!</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffefdb; /* Легкий кремовый фон */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in; /* Анимация появления всей страницы */
+        }
+
+        header {
+            background-color: #ff69b4; /* Розовый фон */
+            color: white;
+            padding: 20px 0;
+            animation: slideDown 1s ease-in-out; /* Анимация для заголовка */
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            animation: bounceIn 1s ease-in-out; /* Анимация заголовка */
+        }
+
+        .photo {
+            border-radius: 50%; /* Закругляем фотографию */
+            width: 200px;
+            height: 200px;
+            object-fit: cover; /* Сохраняем пропорции изображения */
+            margin: 20px 0;
+            opacity: 0;
+            animation: fadeInImage 2s ease-in-out forwards; /* Анимация появления фотографии */
+        }
+
+        .message {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #555;
+            opacity: 0;
+            animation: fadeInText 2s ease-in-out forwards; /* Анимация для текста */
+            animation-delay: 1s; /* Задержка для текста, чтобы он появился позже */
+        }
+
+        .poem {
+            font-size: 22px;
+            color: #7a4f7f;
+            font-style: italic;
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadeInText 2s ease-in-out forwards; /* Анимация для стихотворения */
+            animation-delay: 2s; /* Задержка для стихотворения, чтобы оно появилось после текста */
+        }
+
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        /* Анимации */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInImage {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-50px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>С Днем Матери!</h1>
+</header>
+
+<div class="container">
+    <!-- Вставьте свою фотографию, заменив путь на файл вашей картинки -->
+    <img src="https://sun9-21.userapi.com/impg/eBwCo3G51FpIwzMSMQLjXAEjSCVKO53CyyAdxg/SRFJhL4ri18.jpg?size=1623x2160&quality=95&sign=6124a8f4110731d889479a1deb61d153&type=album" alt="Ваша фотография" class="photo">
+
+    <div class="message">
+        <p>Дорогая мама, поздравляю тебя с этим замечательным днем!</p>
+        <p>Ты самая лучшая в мире, и я горжусь, что ты моя мама.</p>
+        <p>Желаю тебе счастья, здоровья и всегда оставаться такой же прекрасной!</p>
+    </div>
+
+    <div class="poem">
+        <p>Мама, ты — мой светлый ангел,</p>
+        <p>Тепло твоих объятий — как весна.</p>
+        <p>Ты для меня — всегда опора,</p>
+        <p>Твоя любовь — как вечная весна.</p>
+    </div>
+</div>
+
+<footer>
+    <p>С любовью, Игорь</p>
+</footer>
+
+</body>
+</html>
